@@ -14,9 +14,8 @@
       * Call/Message the Doctor
 * Doctor
   1. open patient and view details( no edit)
-  2. Consult through IM
-  3. Verify the diseases based on symptoms
-
+  2. Consult
+ 
 ## Requirements
 * Any Server with support of php v5.4 and above and mysql is capable of running this application. The sql dumo is also present in the repository.
 
@@ -39,7 +38,7 @@
 ## Support
  * If you find any problem of any kind , be it regarding installation or data dumps , you are always welcome to write to us at : support@setkernel.com or tweet @realRaghavGupta
  
-## Credit
+## Credits
  * Raghav Gupta
  * Sujit Sharma
  * Ankit Sharma
@@ -47,4 +46,4 @@
  * Thanks to StatusBrew Team for provoding us a environment to code with all necessary resources.  
  
 ## Disclaimer
- * This is a beta version of this application , if you find any bugs or want to improve this application , your contribution is always welcome. You can submit the pull request with changes to us and we will surely look into it.
+ * This is an alpha version of this application , if you find any bugs or want to improve this application , your contribution is always welcome. You can submit the pull request with changes to us and we will surely look into it.
