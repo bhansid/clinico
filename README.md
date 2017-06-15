@@ -1,4 +1,5 @@
 # clinico
+
 ## An application to connect patients with the network of doctors.
 ### Roles
 * Users
@@ -11,7 +12,6 @@
   7. Online Consultancy
       * Upload Report
       * Call/Message the Doctor
-      
-      
-
-
+* Doctor
+  1. open patient and view details( no edit)
+  2. Consult
