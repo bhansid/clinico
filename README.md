@@ -1,2 +1,2 @@
 # clinico
-Clinico app
+## An application to connect patients with the network of doctors .
