@@ -27,7 +27,7 @@
     function searchareas() {
 //        var city = document.getElementById("city").value;
         var symp = document.getElementById("txtsrch").value;
-         alert(symp);
+//         alert(symp);
         var xhttp = new XMLHttpRequest();
         xhttp.onreadystatechange = function () {
             if (xhttp.readyState == 4 && xhttp.status == 200) {
@@ -37,6 +37,23 @@
         xhttp.open("GET", "getdata.php?s=" + symp, true);
         xhttp.send();
     }
+    function appoint() {
+//        var city = document.getElementById("city").value;
+		var time = new Date();
+		var time = time.toDateString();
+		var mobileno = <?php echo $_SESSION['user'] ?> ;
+		var iss = document.getElementById("txtsrch").value;
+        var xmlhttp = new XMLHttpRequest();
+        xmlhttp.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+//                location.href = "userhome.php";
+                document.getElementById("txtHint").innerHTML = xmlhttp.responseText;
+            }
+        };
+        xmlhttp.open("GET", "subapp.php?time=" + time + "&mo=" + mobileno + "&sym=" + iss, true);
+        xmlhttp.send();
+    }
+
     function proceed(centre) {
 
         var parr=document.getElementsByName("patient");
@@ -90,8 +107,6 @@
 			<div class="collapse navbar-collapse nav-wil" id="bs-example-navbar-collapse-1">
 				<nav class="cl-effect-5" id="cl-effect-5">
 					<ul class="nav navbar-nav">
-						<li><a href="add_view_patient.php">Add/View Patient</a></li>
-						<li><a href="my_bookings.php">My Bookings</a></li>
 						<li class="dropdown">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown"
 							   role="button" aria-haspopup="true" aria-expanded="false">Settings<span
@@ -102,7 +117,9 @@
 								<li><a href="userlogout.php">LogOut</a></li>
 							</ul>
 						</li>
-						<li class="active navbar-right"><a>Welcome , <?php echo $_SESSION['user'] ?></a></li>
+						<li class="active navbar-right"><a>Welcome ,
+
+								<?php $u=$_SESSION['user']; $q="select name from userprofile where mobileno= '$u'"; $qu=mysqli_query($conn,$q);$qu1=mysqli_fetch_array($qu); echo $qu1[0]; ?></a></li>
 
 					</ul>
 				</nav>

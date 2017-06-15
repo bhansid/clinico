@@ -34,7 +34,7 @@
 				# procedural
 				$dob1= date_diff(date_create($dob), date_create('today'))->y;
 				echo $dob1;
-				$insert1 = "insert into userprofile values('$mno','$name','$dob1',NULL,NULL)";
+				$insert1 = "insert into userprofile values('$mno','$name','$dob1',NULL,NULL,NULL)";
 				mysqli_query($conn, $insert1);
 				header("location:usersignup.php?msg=User Signed up successfully");
 			}

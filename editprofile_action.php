@@ -1,17 +1,13 @@
 <?php
 	include "connection.php";
 	session_start();
-	$name=$_REQUEST['name'];
-	$dob=$_REQUEST['dob'];
-	$email=$_REQUEST['email'];
-	$pass=$_REQUEST['pass'];
-	$cpass=$_REQUEST['cpass'];
-	$spe=$_REQUEST['specialization'];
 	$mno=$_REQUEST['mno'];
-	$otpc = $_SESSION["otp"];
-	$otp=$_REQUEST["otp"];
+	$pname=$_REQUEST['pname'];
+	$age=$_REQUEST['age'];
+	$weight=$_REQUEST['weight'];
+	$gender=$_REQUEST['gender'];
 
-	$select="select * from doctorsignup";
+	$select="select * from usersignup";
 	$res=mysqli_query($conn,$select);
 	$flag=false;
 	while ($row=mysqli_fetch_array($res)){
@@ -27,9 +23,17 @@
 		if($pass == $cpass){
 			if($otp == $otpc && $otp!="")
 			{
-				$insert = "insert into doctorsignup values('$mno','$email','$name','$dob','$pass','$otp','$spe')";
+				$insert = "insert into usersignup values('$mno','$email','$pass','$otp')";
 				mysqli_query($conn, $insert);
-				header("location:usersignup.php?msg=Doctor Signed up successfully");
+
+				# object oriented
+
+				# procedural
+				$dob1= date_diff(date_create($dob), date_create('today'))->y;
+				echo $dob1;
+				$insert1 = "insert into userprofile values('$mno','$name','$dob1',NULL,NULL)";
+				mysqli_query($conn, $insert1);
+				header("location:usersignup.php?msg=User Signed up successfully");
 			}
 			else{
 				header("location:usersignup.php?msg=Wrong OTP");

@@ -15,7 +15,7 @@
 			<h2 class="text-center">Doctor Log In</h2>
 			<div class="col-md-3"></div>
 			<div class="col-md-6">
-				<form action="userlogin_action.php" method="post" class="form-horizontal">
+				<form action="doctorlogin_action.php" method="post" class="form-horizontal">
 					<div class="form-group">
 						Mobile No.
 						<div class="input-group">

@@ -20,7 +20,7 @@
 ?>
 	<div class="container">
 		<h2>Edit Profile</h2>
-		<form action="update_profile.php" method="post">
+		<form action="editprofile_action.php" method="post">
 			<div class="form-group">
 				Patient Mobile Number
 				<input type="text" name="mno" value="<?php echo $row[0] ?>" class="form-control" required readonly/>
@@ -33,7 +33,7 @@
 
 			<div class="form-group">
 				Patient Age
-				<input type="date" name="pname" value="<?php echo $row[2] ?>" class="form-control" required readonly/>
+				<input type="date" name="page" value="<?php echo $row[2] ?>" class="form-control" required readonly/>
 			</div>
 
 			<div class="form-group">
@@ -43,7 +43,7 @@
 
 			<div class="form-group">
 				Patient Gender
-				<input type="number" name="weight" value="<?php echo $row[4] ?>" required class="form-control"/>
+				<input type="number" name="gender" value="<?php echo $row[4] ?>" required class="form-control"/>
 			</div>
 
 			<div class="form-group">
