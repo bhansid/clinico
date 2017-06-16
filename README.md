@@ -23,6 +23,7 @@
      2. Create a database 
      3. Import the data dump into the server root
      4. Browse the application from localhost/clinico (if you have cloned the application correctly) 
+     5. Use are using MSG91 gateway for sms , get your API msg91.com and edit the otpaction.php and subapp.php with your API
     
 ## Supporting Platforms
   * Php Server(>v 5.4)
