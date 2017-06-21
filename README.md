@@ -43,3 +43,6 @@
   
 ## Disclaimer
    * This is a beta version of this application , if you find any bugs or want to improve this application , your contribution is always welcome. You can submit the pull request with changes to us and we will surely look into it.
+   
+## Presentation
+   * You can check breif working strategy of our application in a detailed presentation <a href="https://www.slideshare.net/saisiddharth716/clinico-77140743">here </a>
