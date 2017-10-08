@@ -1,4 +1,5 @@
-# Clinico
+# Clinico (Development was suspended for a while and is resuming now!)
+## Meanwhile check our other works at www.setkernel.com and www.dopeblogging.com
 #### Clinico is a cross platform web application which has a primary moto to increase the interaction between doctors and patients ; mainly build on php and javascript as front end and sql as the backend , these are the technologies it takes if you want to use these libraries , but if you are just an end user and come here by any chance looking for such a nice application, you can access us on web on http://clinico.setkernel.com/
   
 ## Roles
@@ -36,8 +37,6 @@
  
 ## Credits
   * Raghav Gupta
-  * Sujit Sharma
-  * Ankit Sharma
   * Siddharth Bhan
   * Thanks to StatusBrew Team for provoding us a environment to code with all necessary resources.  
   
